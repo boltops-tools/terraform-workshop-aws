@@ -1,4 +1,4 @@
-# Simple Terraform Tutorial Workshop
+# Simple Terraform Tutorial Workshop for AWS Cloud
 
 In this workshop, we'll create a AWS S3 bucket with Terraform.  For simplicity, we'll use local storage for the statefile. Local storage should only be used for light testing. For real-world usage, you should use a remote backend.
 
