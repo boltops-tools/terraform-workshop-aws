@@ -20,6 +20,7 @@ Another good way to install terraform is with [tfenv](https://github.com/tfutils
 Open a new terminal and then run:
 
     tfenv install 0.13.1
+    tfenv use 0.13.1
 
 ## Configure AWS
 
