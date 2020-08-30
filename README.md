@@ -10,7 +10,7 @@ In this workshop, we'll create an AWS S3 bucket with Terraform.  For simplicity,
 
 ## Install Terraform
 
-Here is the official [Terraform Download page](https://www.terraform.io/downloads.html).  If you  instructions
+Here is the official [Terraform Download page](https://www.terraform.io/downloads.html).  You can follow those instructions. Just make sure to put the terraform executable in a folder that is found in the PATH. IE: `which terraform` should show the location of terraform.
 
 Another good way to install terraform is with [tfenv](https://github.com/tfutils/tfenv) - Terraform version manager. This allows you to quickly switch between different versions of Terraform. Here are instructions for tfenv:
 
