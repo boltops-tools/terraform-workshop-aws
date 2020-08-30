@@ -24,12 +24,20 @@ Open a new terminal and then run:
 
 ## Configure AWS
 
-Configure AWS so Terraform can connect to it. The recommended way is to:
+Here are the instructions to install the [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html). 
+
+Next, configure AWS so Terraform can connect to it. The recommended way is to:
 
 1. set up the `~/.aws/config` and `~/.aws/credentials` files
 2. set up your `AWS_PROFILE` and `AWS_REGION` environment variables
 
 ## Example Config Setup
+
+You can use the `aws configure` command to set up the `~/.aws/config` and `~/.aws/credentials` files.
+
+    aws configure --profile dev
+
+They'll look something like this:
 
 ~/.aws/config
 
