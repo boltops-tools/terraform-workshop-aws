@@ -1,6 +1,25 @@
 # Simple Terraform Tutorial Workshop for AWS Cloud
 
-In this workshop, we'll create a AWS S3 bucket with Terraform.  For simplicity, we'll use local storage for the statefile. Local storage should only be used for light testing. For real-world usage, you should use a remote backend.
+In this workshop, we'll create an AWS S3 bucket with Terraform.  For simplicity, we'll use local storage for the statefile. Local storage should only be used for light testing. For real-world usage, you should use a remote backend.
+
+## Summary
+
+1. Install Terraform
+2. Configure AWS
+3. Deploy Infrastructure
+
+## Install Terraform
+
+Here is the official [Terraform Download page](https://www.terraform.io/downloads.html).  If you  instructions
+
+Another good way to install terraform is with [tfenv](https://github.com/tfutils/tfenv) - Terraform version manager. This allows you to quickly switch between different versions of Terraform. Here are instructions for tfenv:
+
+    git clone https://github.com/tfutils/tfenv.git ~/.tfenv
+    echo 'export PATH="$HOME/.tfenv/bin:$PATH"' >> ~/.bash_profile
+
+Open a new terminal and then run:
+
+    tfenv install 0.13.1
 
 ## Configure AWS
 
@@ -145,7 +164,7 @@ Here's also relevant part of the statefile.
 # ...
 ```
 
-This is how terraform keeps track of what has been created and how to the manage the resources. As such, this is a crucial file.  In real-world usage, the statefile is stored in a remote backend like a S3 bucket and versioned.
+This is how terraform keeps track of what has been created and how to manage the resources. As such, this is a crucial file.  In real-world usage, the statefile is stored in a remote backend like an S3 bucket and versioned.
 
 ## Cleanup
 
