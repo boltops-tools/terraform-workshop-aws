@@ -35,25 +35,24 @@ Next, configure AWS so Terraform can connect to it. The recommended way is to:
 
 You can use the `aws configure` command to set up the `~/.aws/config` and `~/.aws/credentials` files.
 
-    aws configure --profile dev
+    aws configure
 
 They'll look something like this:
 
 ~/.aws/config
 
-    [dev]
+    [default]
     output = json
     region = us-west-2
 
 ~/.aws/credentials
 
-    [dev]
+    [default]
     aws_access_key_id = REPLACE_ME
     aws_secret_access_key = REPLACE_ME
 
 In your `~/.bashrc` or `~/.profile`, use this line to set the `AWS_PROFILE` and `AWS_REGION` environment variables:
 
-    export AWS_PROFILE=dev
     export AWS_REGION=`aws configure get region` # to match what's in ~/.aws/config
 
 The reason we have to configure `AWS_REGION` also, is because Terraform doesn't seem to use the `~/.aws/config` setting, but will use the `AWS_REGION`.
